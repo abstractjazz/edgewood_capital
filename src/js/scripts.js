@@ -57,3 +57,8 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// const serviceMenu=document.getElementById("dropdownMenuLink")
+// console.log(serviceMenu)
+
+// serviceMenu.onclick=function(event){event.preventDefault()}
