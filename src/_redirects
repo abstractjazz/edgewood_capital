@@ -1,6 +1,9 @@
 # Redirects from what the browser requests to what we serve
 
+index.html                /
 churches.html             /churches
-/blog/my-post.php  /blog/my-post
-/news              /blog
-/cuties            https://www.petsofnetlify.com
+construction.html         /construction
+conventional.html         /conventional
+hard-money.html           /hard-money 
+luxury.html               /luxury
+medical.html              /medical
