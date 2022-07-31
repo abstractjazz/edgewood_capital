@@ -1,5 +1,5 @@
 # Redirects from what the browser requests to what we serve
-/churches.html             src/churches
+src/churches.html             /churches
 /blog/my-post.php  /blog/my-post
 /news              /blog
 /cuties            https://www.petsofnetlify.com
