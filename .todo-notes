@@ -1,0 +1,15 @@
+
+# notes
+USED BOOTSTRAP TEMPLATE
+https://startbootstrap.com/theme/creative
+
+ROUTING HANDLED IN NETLIFY  
+Netlify reads _redirects file and redirects requested routes to named routes
+
+# to-do
+Change font in nav 
+Match nav pages to sections 
+Services Section - Align items. Add Quote Form. 
+Dropdown - good 
+Service pages + router (added service pages // routing with reloads OR spa[maybe wrap the html pages in react? or show a new html doc])
+Change favicon

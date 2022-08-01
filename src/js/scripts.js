@@ -43,11 +43,12 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
+    //CODE FOR SERVICES MENU CONTROLLED HERE
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
+            // if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            //     navbarToggler.click();
+            // }
         });
     });
 
@@ -58,7 +59,24 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// const serviceMenu=document.getElementById("dropdownMenuLink")
-// console.log(serviceMenu)
+const serviceMenu=document.getElementById('dropdownMenuLink')
+const sandwich = document.querySelector('button.navbar-toggler')
+const mobileDropdownMenu=document.getElementById('mobiledropdownMenu')
+const navResponse=document.getElementById('navbarResponsive')
+
+if (sandwich) {
+   serviceMenu.addEventListener('click',function(e){e.preventDefault()})
+   }
+
+
+       
+  
+
+    // function scoop(event) {
+    // // event.preventDefault()
+    // serviceMenu.ariaExpanded=true
+    // // serviceMenu.classList.remove()
+    // serviceMenu.classList.add('show')
+
 
 // serviceMenu.onclick=function(event){event.preventDefault()}
