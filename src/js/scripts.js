@@ -38,6 +38,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
+    const serviceMenu=document.getElementById('dropdownMenuLink')
+    const sandwich = document.querySelector('button.navbar-toggler')
+    const mobileDropdownMenu=document.getElementById('mobiledropdownMenu')
+    const navResponse=document.getElementById('navbarResponsive')
+
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
@@ -46,9 +51,9 @@ window.addEventListener('DOMContentLoaded', event => {
     //CODE FOR SERVICES MENU CONTROLLED HERE
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
-            // if (window.getComputedStyle(navbarToggler).display !== 'none') {
-            //     navbarToggler.click();
-            // }
+            if (window.getComputedStyle(navbarToggler).display !== 'none' && responsiveNavItem !== serviceMenu) {
+                navbarToggler.click();
+            }
         });
     });
 
