@@ -86,7 +86,7 @@
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5 justify-content-center" style="border: 1px solid">
-                <h2 class="text-center mt-0">At Your Service</h2>
+                <h2 class="text-center mt-0">Get A Quote</h2>
                 <hr class="divider" />
                 <div class="row gx-3 gx-lg-5">
                     <!-- <div class="col-lg-3 col-md-6 text-center">
@@ -131,7 +131,45 @@
                         </div>
                     </div>
                     <div class="col-lg col-md-6 text-center" style="border:1px solid black;">
-                       
+                        <form data-netlify="true">
+                            <div class="mb-3">
+                                <label for="customer-name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="customer-name" aria-describedby="customer-name">
+                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                              </div>
+                            <div class="mb-3">
+                              <label for="customer-email" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="customer-email" aria-describedby="customer-email">
+                              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                            </div>
+                           
+                            <div class="mb-3">
+                              <label for="customer-phone" class="form-label">Phone Number</label>
+                              <input type="tel" class="form-control" id="customer-phone" aria-describedby="customer-phone">
+                              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                            </div>
+                           
+                            <div class="mb-3">
+                              <label for="property-select" class="form-label">Property Type</label>
+                              <select class="form-select" aria-label="property-select">
+                                <option selected>Select</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Office Building">Office Building</option>
+                                <option value="Church">Church</option>
+                                <option value="Mixed Use">Mixed Use</option>
+                                <option value="Warehouse">Warehouse</option>
+                                <option value="Apartment (5-20 units)">Apartment(5-20 units)</option>
+                                <option value="Apartment (21 + units)">Apartment(21+ units)</option>
+                                <option value="Other Commercial Use">Other Commercial Use</option>
+                                <option value="Other Residential Use">Other Residential Use</option>
+                              </select>
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
                        
                     </div>
                 </div>
