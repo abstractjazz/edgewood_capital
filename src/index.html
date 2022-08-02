@@ -16,7 +16,7 @@
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet"/>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -37,7 +37,7 @@
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item">
                             <div class="dropdown show" id="mobileDropdownMenu">
-                                <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                                <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Loan Type</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="/hard-money">Hard Money</a>
                                     <a class="dropdown-item" href="/construction">Construction</a>
@@ -130,7 +130,7 @@
                             <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
                         </div>
                     </div>
-                    <div class="col-lg col-md-6 text-center" style="border:1px solid black;">
+                    <div class="col-lg col-md text-center" style="border:1px solid black;">
                         <form data-netlify="true">
                             <div class="mb-3">
                                 <label for="customer-name" class="form-label">Name</label>
@@ -160,17 +160,40 @@
                                 <option value="Warehouse">Warehouse</option>
                                 <option value="Apartment (5-20 units)">Apartment(5-20 units)</option>
                                 <option value="Apartment (21 + units)">Apartment(21+ units)</option>
+                                <option value="Single Family Home">Single Family Home</option>
+                                <option value="1-4 unit home">1-4 unit home</option>
                                 <option value="Other Commercial Use">Other Commercial Use</option>
+
                                 <option value="Other Residential Use">Other Residential Use</option>
                               </select>
                             </div>
                             <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
+                                <strong><p>Purshase or Refi?</p></strong>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="purchase-check">
+                                    <label class="form-check-label" for="flexRadioDefault" style="margin-left:-9rem;">
+                                     Purchase
+                                    </label>
+                                  </div>
+                                  <label class="sub-menu-label" for="purchase-price"></label>
+                                  <input type="text" class="form-control" name="text-field" id="purchase-price" aria-describedby="purchase-price" placeholder="Purchase Price" style="display:none;">
+                                  <label class="sub-menu-label" for="preferred-amount"></label>
+                                  <input type="text" class="form-control" name="text-field" id="preferred-amount" aria-describedby="preferred-amount" placeholder="Preferred Loan Amount" style="display:none;"><br/><br/>
+                                  
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="refi-check">
+                                    <label class="form-check-label" for="flexRadioDefault" style="margin-left:-11.5rem;">
+                                    Refi
+                                    </label><br><br>
+                                  </div>
+                                  <label class="sub-menu-label" for="preferred-amount" style="display:none;"></label>
+                                  <input type="text" class="form-control" name="text-field" id="estimated-value" aria-describedby="estimated-value" placeholder="Estimated Value" style="display:none;">
+                                  <label class="sub-menu-label" for="text-field" style="display:none;"></label>
+                                  <input type="text" class="form-control" name="text-field" id="mortgage-balance" aria-describedby="mortgage-balance" placeholder="Balance of Current Mortgage" style="display:none;"><br><br>
+                                 
+                                  
                             <button type="submit" class="btn btn-primary">Submit</button>
                           </form>
-                       
                     </div>
                 </div>
             </div>

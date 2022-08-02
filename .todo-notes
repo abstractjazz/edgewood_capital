@@ -12,4 +12,5 @@ Match nav pages to sections
 Services Section - Align items. Add Quote Form. 
 Dropdown - good 
 Service pages + router (added service pages // routing with reloads OR spa[maybe wrap the html pages in react? or show a new html doc])
+Change company name in footer to Edgewood Capital
 Change favicon

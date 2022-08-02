@@ -65,13 +65,45 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 const serviceMenu=document.getElementById('dropdownMenuLink')
-const sandwich = document.querySelector('button.navbar-toggler')
+const sandwich=document.querySelector('button.navbar-toggler')
 const mobileDropdownMenu=document.getElementById('mobiledropdownMenu')
 const navResponse=document.getElementById('navbarResponsive')
+const purchaseCheck=document.getElementById('purchase-check')
+const refiCheck = document.getElementById('refi-check')
 
-if (sandwich) {
-   serviceMenu.addEventListener('click',function(e){e.preventDefault()})
-   }
+const mortgageBalance=document.getElementById('mortgage-balance')
+const estimatedValue=document.getElementById('estimated-value')
+const preferredAmount=document.getElementById('preferred-amount')
+const purchasePrice=document.getElementById('purchase-price')
+purchasePrice.style.display="block"
+preferredAmount.style.display="block"
+
+
+if (purchaseCheck.checked !==true){
+    purchasePrice.style.display="none"
+    preferredAmount.style.display="none"
+}
+
+if (refiCheck.checked==true){
+    estimatedValue.style.display="block"
+    mortgageBalance.style.display="block"
+}
+
+purchaseCheck.onclick=function() { 
+    estimatedValue.style.display="none"
+    mortgageBalance.style.display="none"
+    purchasePrice.style.display="block"
+    preferredAmount.style.display="block"
+}
+
+refiCheck.onclick=function(){
+    purchasePrice.style.display="none"
+    preferredAmount.style.display="none"
+    estimatedValue.style.display="block"
+    mortgageBalance.style.display="block"
+}
+
+   
 
 
        
