@@ -58,9 +58,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
+    // new SimpleLightbox({
+    //     elements: '#portfolio '
+    // });
 
 });
 
@@ -78,6 +78,8 @@ const purchasePrice=document.getElementById('purchase-price')
 purchasePrice.style.display="block"
 preferredAmount.style.display="block"
 
+
+// QUOTE FORM CONTROL FOR PURCHASE OR REFI CONDITIONAL //
 
 if (purchaseCheck.checked !==true){
     purchasePrice.style.display="none"

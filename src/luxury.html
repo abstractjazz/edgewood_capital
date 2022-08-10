@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Edgewood Capital Group</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon-4.png" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -16,13 +16,14 @@
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" id="home2" href="#page-top">ECG</a>
+                <a class="navbar-brand" id="home2" href="index.html">ECG</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -32,19 +33,19 @@
                         <li class="nav-item"><a class="nav-link" href="#contact">Luxury</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Churches</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Medical</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="#contact">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Get a Quote</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#quote-form">Get a Quote</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact-form">Contact</a></li>
                         <li class="nav-item">
-                            <div class="dropdown show">
-                                <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown show" id="mobileDropdownMenu">
+                                <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Loan Type</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Hard Money</a>
-                                    <a class="dropdown-item" href="#">Construction</a>
-                                    <a class="dropdown-item" href="#">Conventional</a>
-                                    <a class="dropdown-item" href="#">Luxury</a>
-                                    <a class="dropdown-item" href="#">Churches</a>
-                                    <a class="dropdown-item" href="#">Medical</a>
+                                    <a class="dropdown-item" href="/hard-money">Hard Money</a>
+                                    <a class="dropdown-item" href="/construction">Construction</a>
+                                    <a class="dropdown-item" href="/conventional">Conventional</a>
+                                    <a class="dropdown-item" href="/luxury">Luxury</a>
+                                    <a class="dropdown-item" href="/churches">Churches</a>
+                                    <a class="dropdown-item" href="/medical">Medical</a>
                                     
                                 </div>
                             </div>
@@ -56,26 +57,13 @@
         </nav>
 
         <!-- Masthead-->
-        
-        <!-- About-->
-        <!-- <section class="page-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">We've got what you need!</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                        <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+       
         <!-- Services-->
         <section class="page-section" id="services">
-            <div class="container px-4 px-lg-5 justify-content-center" style="border: 1px solid">
-                <h2 class="text-center mt-0">Luxury</h2>
-                <hr class="divider" />
-                <div class="row gx-3 gx-lg-5">
+            <div class="container px-4 px-lg-5 justify-content-center" style="border: none">
+              <h2 class="text-center mt-0">Hard Money</h2>
+                <hr class="divider" /> 
+                <div class="row gx-3 gx-lg-1 align-items start">
                     <!-- <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
@@ -83,46 +71,229 @@
                             <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
                         </div>
                     </div> -->
-                    <div class="col-lg col-md-6 text-center" style="border: 1px solid black;">
-                        <div class="mt-3">
-                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Up to Date</h3>
-                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                    <div class="col-lg-6" style="border: none;">
+                        <div class="mt-4 mx-5">
+                            <!-- <div class="mb-2"><i class="bi-bank fs-1 text-primary"></i></div> -->
+                            <img src="assets/img/section-img/private-jet.jpg" alt="a private jet engine and wing" style="width:100%; height:auto; border:1px solid black"><br><br>
+                            <!-- <h3 class="h4 mb-2">Hard Money</h3> -->
+                        
+                            <h3>Yacht Financing</h3>
+                            <p class="text-muted mb-0">$5MM min loan size domestic • $15MM min loan size international • 
+                                Term: 2 - 3 years • 3.5% - 5% interest only, no upfront fees, no prepayment penalty 
+                                • Yacht specifications (model, year built, etc.) • Proof of docked location • Method of registration 
+                                • Borrower financial info US clients 
+                                • LTV dependent on loan size, age of yacht and borrower’s financials</p><br><br>
+                            <h3>Art Financing</h3>
+                            <p class="text-muted mb-0">$5MM min loan size domestic • $15MM min loan size international • 
+                                Term: 2 - 3 years • 3.5% - 5% interest only, no upfront fees, no prepayment penalty • 
+                                List of all art being offered as collateral and their locations • Borrower financial info • 
+                                LTV up to 50%</p><br><br>
+
+                            <h3>Aircraft Financing</h3>
+                            <p class="text-muted mb-0">$4MM min loan size domestic • $15MM min loan size international • Lease or Lending (Lease is an option only for aircrafts) • Term: up to 5 years • 3.5% - 5% interest only, no upfront fees, no prepayment penalty • 
+                                Model, year and tail number • Location based and registered • Entity that owns the plane • Borrower financial Info • LTV up to 75%</p>
+                        </div>
+                        <!-- <div class="mt-3">
+                            <div class="mb-2"><i class="bi-airplane-engines fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Luxury Program</h3>
+                            <p class="text-muted mb-0">Let us help you grow your business by taking equity out of your most valuable assets. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         </div>
                         <div class="mt-3">
-                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Up to Date</h3>
-                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                            <div class="mb-2"><i class="bi-building fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Conventional</h3>
+                            <p class="text-muted mb-0">Our programs include permanent finance for both commercial and residential properties in all 50 states.</p>
+                        </div>
+                        <div>
+                            <img src="assets/img/section-img/windows.jpg" alt="textural photo of windows" style="width: 200%; height: auto; margin-top: 3.5em; margin-bottom:1.5em; ">
                         </div>
                     </div>
-                    <div class="col-lg col-md-6 text-center" style="border:1px solid black;">
+                    <div class="col-lg col-md-6 text-center" style="border:none;">
                         <div class="mt-3">
-                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
-                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                            <div class="mb-2"><i class="bi-house-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Churches</h3>
+                            <p class="text-muted mb-0">If you are a church that has a financing need to either acquire, refinance, or construct a new facility. We can help!</p>
                         </div>
                         <div class="mt-3">
-                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
-                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                            <div class="mb-2"><i class="bi-hospital fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Medical Program</h3>
+                            <p class="text-muted mb-0">Innovative financing for health Care Practitioners. Learn more about our lending options for Doctors, Dentists, and Veterinarians.</p>
                         </div>
+                        <div class="mt-3">
+                            <div class="mb-2"><i class="bi-exclamation-triangle fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Construction</h3>
+                            <p class="text-muted mb-0">We provide a wide array of construction programs to help the developer or builder fund most of his construction projects.</p>
+                        </div>
+                    </div> -->
+                    
+                </div>
+                <div class="col  text-center" style="border:2px solid black; margin-bottom: 2em; margin-top: 1.5em ">
+                    <form data-netlify="true">
+                        <h4>Get A Quote</h4>
+                        <hr class="divider" />
+                        <div class="mb-3">
+                            <label for="customer-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="customer-name" aria-describedby="customer-name">
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                          </div>
+                        <div class="mb-3">
+                          <label for="customer-email" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="customer-email" aria-describedby="customer-email">
+                          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                       
+                        <div class="mb-3">
+                          <label for="customer-phone" class="form-label">Phone Number</label>
+                          <input type="tel" class="form-control" id="customer-phone" aria-describedby="customer-phone">
+                          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                       
+                        <div class="mb-3">
+                          <label for="property-select" class="form-label">Property Type</label>
+                          <select class="form-select" aria-label="property-select">
+                            <option selected>Select</option>
+                            <option value="Retail">Retail</option>
+                            <option value="Office Building">Office Building</option>
+                            <option value="Church">Church</option>
+                            <option value="Mixed Use">Mixed Use</option>
+                            <option value="Warehouse">Warehouse</option>
+                            <option value="Apartment (5-20 units)">Apartment(5-20 units)</option>
+                            <option value="Apartment (21 + units)">Apartment(21+ units)</option>
+                            <option value="Single Family Home">Single Family Home</option>
+                            <option value="1-4 unit home">1-4 unit home</option>
+                            <option value="Other Commercial Use">Other Commercial Use</option>
+    
+                            <option value="Other Residential Use">Other Residential Use</option>
+                          </select>
+                          <br><br><label>Loan Amount:</label>
+              <select name="loan-amount" class="select" id="amount-select">
+                <optgroup id="amount-list">
+              
+                  <option value="" selected="">Select</option>
+                  <option value="500K-600K">500K-600K</option>
+                  <option value="600K-1MM">600K-1MM</option>
+                  <option value="1MM-10MM">1MM-10MM</option>
+                  <option value="20MM-30MM">20MM-30MM</option>
+                  <option value="30MM-40MM">30MM-40MM</option>
+                  <option value="40MM-50MM">40MM-50MM</option>
+                  <option value="50MM-60MM">50MM-60MM</option>
+                  <option value="60MM-70MM">60MM-70MM</option>
+                  <option value="70MM-80MM">70MM-80MM</option>
+                  <option value="80MM-90MM">80MM-90MM</option>
+                  <option value="90MM-100MM">90MM-100MM</option>
+                  <option value="100MM+">100MM+</option>
+                </optgroup>
+              </select><br><br>
+    
+             <label for="credit-type">Credit Score:</label>
+              <select name="credit-type" class="select" id="credit-select">
+                <optgroup id="credit-list">
+                  <option value="" selected="true">Select</option>
+                  <option value="Excellent">Excellent</option>
+                  <option value="Good">Good</option>
+                  <option value="Fair">Fair</option>
+                  <option value="Poor">Poor</option>
+                  <option value="Unsure">Unsure</option>
+                </optgroup>
+              </select>
+            </p><br>
+           
+                        </div>
+                        <div class="mb-3 form-check">
+                            <strong><p>Purshase or Refi?</p></strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="purchase-check">
+                                <label class="form-check-label" for="flexRadioDefault" style="margin-left:-9rem;">
+                                 Purchase
+                                </label>
+                              </div>
+                              <label class="sub-menu-label" for="purchase-price"></label>
+                              <input type="text" class="form-control" name="text-field" id="purchase-price" aria-describedby="purchase-price" placeholder="Purchase Price" style="display:none;">
+                              <label class="sub-menu-label" for="preferred-amount"></label>
+                              <input type="text" class="form-control" name="text-field" id="preferred-amount" aria-describedby="preferred-amount" placeholder="Preferred Loan Amount" style="display:none;"><br/><br/>
+                              
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="refi-check">
+                                <label class="form-check-label" for="flexRadioDefault" style="margin-left:-11.5rem;">
+                                Refi
+                                </label><br><br>
+                              </div>
+                              <label class="sub-menu-label" for="preferred-amount" style="display:none;"></label>
+                              <input type="text" class="form-control" name="text-field" id="estimated-value" aria-describedby="estimated-value" placeholder="Estimated Value" style="display:none;">
+                              <label class="sub-menu-label" for="text-field" style="display:none;"></label>
+                              <input type="text" class="form-control" name="text-field" id="mortgage-balance" aria-describedby="mortgage-balance" placeholder="Balance of Current Mortgage" style="display:none;"><br><br>
+                              <p>
+                                <label for="message">Project Details<br><textarea id="textarea" class="input" name="message" placeholder="Please add a few details about your project."></textarea></label>
+                            </p>
+                              
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+
+           
+        </section>
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6" >
+                        <a class="portfolio-box" href="/hard-money" title="Hard Money">
+                            <img class="img-fluid" src="assets/img/section-img/bank-2.jpg" alt="Urban Bank Entrance" />
+                            <div class="portfolio-box-caption" style="overflow:hidden;">
+                                <!-- <div class="project-category text-white-50">Category</div> -->
+                                <div class="project-name">Hard Money</div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-lg col-md-6 text-center" style="border:1px solid black;">
-                        <div class="mt-3">
-                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Made with Love</h3>
-                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-                        </div>
-                        <div class="mt-3">
-                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Made with Love</h3>
-                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-                        </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/luxury" title="Luxury">
+                            <img class="img-fluid" src="assets/img/section-img/private-jet.jpg" alt="Close up image of private jet"/>
+                            <div class="portfolio-box-caption">
+                                <!-- <div class="project-category text-white-50">Category</div> -->
+                                <div class="project-name">Luxury</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/conventional" title="Conventional">
+                            <img class="img-fluid" src="assets/img/section-img/apartment-building.jpg" alt="Apartment building and blue sky" />
+                            <div class="portfolio-box-caption">
+                                <!-- <div class="project-category text-white-50">Category</div> -->
+                                <div class="project-name">Conventional</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/churches" title="Churches">
+                            <img class="img-fluid" src="assets/img/section-img/church.jpg" alt="stained-glass" />
+                            <div class="portfolio-box-caption">
+                                <!-- <div class="project-category text-white-50">Category</div> -->
+                                <div class="project-name">Churches</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/medical" title="Medical Program">
+                            <img class="img-fluid" src="assets/img/section-img/steth.jpg" alt="Close up image of a stethoscope" />
+                            <div class="portfolio-box-caption">
+                                <!-- <div class="project-category text-white-50">Category</div> -->
+                                <div class="project-name">Medical Program</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/construction" title="Construction">
+                            <img class="img-fluid" src="assets/img/section-img/construction.jpg" alt="Image of buildings under construction"/>
+                            <div class="portfolio-box-caption p-3">
+                                <!-- <div class="project-category text-white-50">Category</div> -->
+                                <div class="project-name">Construction</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-       
+        </div>
+        
+        
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
@@ -133,6 +304,7 @@
                         <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
                     </div>
                 </div>
+        
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
                         <!-- * * * * * * * * * * * * * * *-->
@@ -142,7 +314,7 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form data-netlify="true" id="contactForm">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -164,7 +336,7 @@
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
@@ -175,9 +347,9 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
+                                    <!-- To activate this form, sign up at
                                     <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
                                 </div>
                             </div>
                             <!-- Submit error message-->
@@ -186,21 +358,32 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit">Submit</button></div>
                         </form>
                     </div>
                 </div>
+                
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div>+1 (555) 123-4567</div>
+                        <div>james@edgewoodcapitalgroup.com</div>
+                        <div>(917) 268-1581</div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Call to action-->
+        <!-- <section class="page-section bg-dark text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">About Edgewood Capital</h2>
+            
+                <p>Edgewood Capital is a Real Estate and Business banking firm with over 20 years of lending experience. Edgewood Capital (EC) is the industry's premier capital firm that provides deep industry knowledge and access to a pool of capital options and partnerships. Years of experience have enabled EC to become a valued business partner that is familiar with all aspects of today's credit challenges. EC's main focus is innovative deal origination, creative structuring, equity investing and providing capital. using our in-house experts. Our everyday market experience enables us to customize financing options for traditional and non-traditional types of situations. We are able to create and execute quick-to-close transactions regardless of size, location or complexity. All of these segments reflect our strong partnership culture, commitment to steady performance and uncompromising integrity. Edgewood Capital is committed to delivering the highest level of client service.
+                </p>
+            </div>
+        </section> -->
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Company Name</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Edgewood Capital</div></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -213,6 +396,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="js/scroll.js"></script>
         <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
     </body>
 </html>
