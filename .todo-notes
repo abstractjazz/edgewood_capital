@@ -8,4 +8,7 @@ Netlify reads _redirects file and redirects requested routes to named routes
 
 # to-do
 give forms unique name attributes & add POST method to each 
-add single row for windows photo
+add single row for windows photov & center
+hyperlink services in main section on index page 
+create 301s for alt urls 
+
