@@ -6,9 +6,10 @@ https://startbootstrap.com/theme/creative
 ROUTING HANDLED IN NETLIFY  
 Netlify reads _redirects file and redirects requested routes to named routes
 
+Service links & icon links styled in js
+
 # to-do
-give forms unique name attributes & add POST method to each 
-add single row for windows photov & center
-hyperlink services in main section on index page 
+
+add single row for windows photov & center 
 create 301s for alt urls 
 

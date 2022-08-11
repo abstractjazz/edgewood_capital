@@ -106,6 +106,16 @@ refiCheck.onclick=function(){
 }
 
    
+const serviceLinks=document.querySelectorAll('div.mt-3 a')
+console.log(serviceLinks)
+const sLinksArray = Array.from(serviceLinks)
+
+sLinksArray.map(serviceLink => {
+serviceLink.style.color="black"
+serviceLink.style.textDecoration="none"
+})
+
+
 
 
        
